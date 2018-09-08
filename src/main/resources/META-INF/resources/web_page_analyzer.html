@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="web_page_analyzer.css">
+<title>Web Page Analyzer</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="web_page_analyzer.js"></script>
+</head>
+
+<body>
+	<div id="form1">
+		<h1>HTML Parser</h1>
+		<table>
+			<tr>
+				<td>Enter URL:</td>
+				<td><input type="text" id="url" size="30"> <input type="button" id="analyze" value="Analyze" onclick="Javascript:parseWebPage()"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	<div id="analysisTable">
+		<table id="tableData" style="width: 50%">
+		</table>
+	</div>
+
+	<div class="modal" style="display: none">
+		<div class="center">
+			<img alt="" src="images/loader.gif" />
+		</div>
+	</div>
+</body>
+</html>
